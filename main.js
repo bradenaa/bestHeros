@@ -1,18 +1,14 @@
 import findBest from './findBest.js'
 import data from './data.js'
+import utils from './utils'
 
 console.log(findBest(data));
 
 
-function subtract(a, b) {
-  return a - b;
-}
-function add(a, b) {
-  return a + b;
-}
+console.log(utils.subtract(3, 2))
+console.log(utils.subtract({}, 2))
+console.log(utils.subtract('3', 2))
+console.log(utils.add('3', 2))
+console.log(utils.add(3, '2'))
 
-console.log(subtract(3, 2))
-console.log(subtract({}, 2))
-console.log(subtract('3', 2))
-console.log(add('3', 2))
-console.log(add(3, '2'))
+console.log(utils.subtract('2', 2))
